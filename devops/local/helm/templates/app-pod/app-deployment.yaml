@@ -69,7 +69,7 @@ spec:
           image: {{ .Values.deployment.dominic.image }}
           ports:
             - name: http-port
-              containerPort: 8015
+              containerPort: 8016
           env:
             - name: {{ .Values.app.prefix }}-app-db
               value: {{ .Values.app.prefix }}-app-db
