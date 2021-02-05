@@ -1,5 +1,5 @@
 export class dom{
-    titleId: String;
+    titleid: String;
     title: String;
     description: String;
 }
