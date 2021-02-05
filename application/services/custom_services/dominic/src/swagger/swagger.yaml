@@ -13,9 +13,9 @@ info:
       name: Apache 2.0
       url: https://www.apache.org/licenses/LICENSE-2.0.html
 servers:
-   - url: http://localhost:8012
+   - url: http://localhost:8013
      description: dominic
-   - url: http://localhost:8012
+   - url: http://localhost:8013
      description: dominic
 tags:
 - name: dom
