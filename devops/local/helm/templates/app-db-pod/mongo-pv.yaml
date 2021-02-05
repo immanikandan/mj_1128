@@ -1,13 +1,13 @@
 kind: PersistentVolume
 apiVersion: v1
 metadata:
-  name: {{ .Values.app.prefix }}-logging-elasticsearch-data-pv
+  name: {{ .Values.app.prefix }}-app-mongo-data-pv
   labels:
     type: local
 spec:
   capacity:
-    storage: 10Gi
+    storage: {{ .Values.persistentVolume.mongo.storage }}
   accessModes:
     - ReadWriteOnce
   hostPath:
-    path: /data/elasticsearch/
+    path: /data/db/
