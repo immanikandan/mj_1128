@@ -51,6 +51,11 @@ service:
     type: NodePort
     port: 8080
     targetPort: 8080
+  dominic: 
+    name: dominic
+    type: NodePort
+    port: 8011
+    targetPort: 8011
 
 
 deployment:
@@ -77,6 +82,9 @@ deployment:
   desktop:
      name: desktop
      image: geppettotest/mj-desktop:1.0
+  dominic: 
+    name: dominic
+    image: geppettotest/mj-dominic:1.0
 
   camundapod:
      name: camundapod
