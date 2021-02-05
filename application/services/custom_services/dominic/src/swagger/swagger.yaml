@@ -1,0 +1,89 @@
+---
+openapi: 3.0.0
+info:
+   version: 1.3.0
+   title: mj open api specification
+   description: dominic API
+   termsOfService: http://api_url/terms/
+   contact:
+      name: ContactName
+      email: hello@wolox.co
+      url: https://www.wolox.com.ar/
+   license:
+      name: Apache 2.0
+      url: https://www.apache.org/licenses/LICENSE-2.0.html
+servers:
+   - url: http://localhost:8009
+     description: dominic
+   - url: http://localhost:8009
+     description: dominic
+tags:
+- name: dom
+- name: dom
+paths:
+   "/undefined":
+      post:
+         tags:
+         description: GpCreate
+         requestBody:
+            content:
+               application/json:
+                  schema:
+                     $ref: "#/components/schemas/undefined"
+         responses:
+            200:
+               description: Success
+            400:
+               description: Bad Request
+            404:
+               description: Not Found
+            500:
+               description: Internal Server Error
+   "/dom":
+   "/undefined":
+         tags:
+   "/dom":
+      post:
+         tags:
+         -  dom
+         description: GpCreate
+         requestBody:
+            content:
+               application/json:
+                  schema:
+                     $ref: "#/components/schemas/dom"
+         responses:
+            200:
+               description: Success
+            400:
+               description: Bad Request
+            404:
+               description: Not Found
+            500:
+               description: Internal Server Error
+components:
+   schemas:
+      dom:
+         type: object
+         properties:
+            titleid:
+               type: "string"
+               description: Description
+            title:
+               type: "string"
+               description: Description
+            description:
+               type: "string"
+               description: Description
+      dom:
+         type: object
+         properties:
+            titleid:
+               type: "string"
+               description: Description
+            title:
+               type: "string"
+               description: Description
+            description:
+               type: "string"
+               description: Description
