@@ -54,8 +54,8 @@ service:
   dominic: 
     name: dominic
     type: NodePort
-    port: 8009
-    targetPort: 8009
+    port: 8011
+    targetPort: 8011
 
 
 deployment:
