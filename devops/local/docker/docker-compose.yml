@@ -69,19 +69,9 @@ services:
       - camundaservice
       - authproxy
       - securitymanager
-      - dominic
 
 
 
-  dominic: 
-    build: ../../../application/services/custom_services/dominic
-    image: dominic-1128
-    container_name: dominic-1128
-    ports: 
-      - 8013:8013
-    env_file: .env
-    depends_on:
-      - mongo
 
 
 volumes:
