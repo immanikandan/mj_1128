@@ -78,7 +78,7 @@ services:
     image: dominic-1128
     container_name: dominic-1128
     ports: 
-      - 8005:8005
+      - 8006:8006
     env_file: .env
     depends_on:
       - mongo
